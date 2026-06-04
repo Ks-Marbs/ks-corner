@@ -12,17 +12,30 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	match str(self.name)[0]:
-		"0":
-			size = Vector2((get_window().size[0]+120)/4+28,60)
 		"1":
 			size = Vector2((get_window().size[0]+120)/4,60)
-			position = Vector2((get_window().size[0]+120)/4-28,0)
+			if Global.woosh:
+				if position < Vector2((get_window().size[0]+120)/4-29,0) or position > Vector2((get_window().size[0]+120)/4-27,0):
+					position += (Vector2((get_window().size[0]+120)/4-28,0) - position)/20.0
+			else:
+				if position > Vector2(-400,0):
+					position += (Vector2(-400,0) - position)/20.0
 		"2":
 			size = Vector2((get_window().size[0]+120)/4,60)
-			position = Vector2((get_window().size[0]+120)/2-56,0)
+			if Global.woosh:
+				if position < Vector2((get_window().size[0]+120)/2-57,0) or position > Vector2((get_window().size[0]+120)/2-55,0):
+					position += (Vector2((get_window().size[0]+120)/2-56,0) - position)/20.0
+			else:
+				if position > Vector2(-400,0):
+					position += (Vector2(-400,0) - position)/20.0
 		"3":
 			size = Vector2((get_window().size[0]+120)/4,60)
-			position = Vector2((get_window().size[0]+120)/4*3-84,0)
-	$RichTextLabel.position = Vector2(size[0]/4,5000/(get_window().size[0]^2))
+			if Global.woosh:
+				if position < Vector2((get_window().size[0]+120)/4*3-85,0) or position > Vector2((get_window().size[0]+120)/4*3-83,0):
+					position += (Vector2((get_window().size[0]+120)/4*3-84,0)- position)/20.0
+			else:
+				if position > Vector2(-400,0):
+					position += (Vector2(-400,0) - position)/20.0
+	$RichTextLabel.position = Vector2(size[0]/4,(get_window().size[0]-1152)/(-60))
 	$RichTextLabel.scale = Vector2((get_window().size[0]+120.0)/288.0,(get_window().size[0]+120.0)/288.0)
 	pass
