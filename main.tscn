@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://clv1aeffgobhx"]
+[gd_scene load_steps=8 format=3 uid="uid://clv1aeffgobhx"]
 
 [ext_resource type="Texture2D" uid="uid://bnmhfqq4u2p0q" path="res://images/Arow button.png" id="1_ig7tw"]
 [ext_resource type="Theme" uid="uid://b5dxjrg5nt1f4" path="res://images/something.tres" id="2_0xm2m"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://cs1gkxm2k086t" path="res://bop.gd" id="3_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://brpu4w365qdso" path="res://images/Arow button hollow.png" id="3_lquwl"]
 [ext_resource type="Script" uid="uid://hn88cim1pmu2" path="res://text.gd" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://cfpvobiy45wdm" path="res://index.icon.png" id="7_272bh"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -67,6 +68,32 @@ text = "Games"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="0" type="ColorRect" parent="1Games"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="t" type="RichTextLabel" parent="1Games/0"]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_left = 12.0
+offset_top = 0.25
+offset_right = 82.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+theme_override_font_sizes/normal_font_size = 8
+text = "Room sokoban"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="1" type="ColorRect" parent="1Games"]
 self_modulate = Color(1, 1, 1, 0)
 z_index = -20
@@ -82,13 +109,40 @@ z_as_relative = false
 layout_mode = 0
 offset_left = 12.0
 offset_top = 0.25
-offset_right = 59.25
-offset_bottom = 14.5
-scale = Vector2(4, 4)
+offset_right = 82.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
 mouse_filter = 2
 mouse_default_cursor_shape = 2
 theme = ExtResource("2_0xm2m")
-text = "Games"
+theme_override_font_sizes/normal_font_size = 8
+text = "Lav's Home"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="ColorRect" parent="1Games"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="t" type="RichTextLabel" parent="1Games/2"]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_left = 12.0
+offset_top = 0.25
+offset_right = 82.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+theme_override_font_sizes/normal_font_size = 8
+text = "U. R. G."
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -122,6 +176,32 @@ text = "Series"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="0" type="ColorRect" parent="2Series"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="t" type="RichTextLabel" parent="2Series/0"]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_left = 12.0
+offset_top = 0.25
+offset_right = 82.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+theme_override_font_sizes/normal_font_size = 8
+text = "T.A.M.R."
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="1" type="ColorRect" parent="2Series"]
 self_modulate = Color(1, 1, 1, 0)
 z_index = -20
@@ -137,13 +217,40 @@ z_as_relative = false
 layout_mode = 0
 offset_left = 12.0
 offset_top = 0.25
-offset_right = 59.25
-offset_bottom = 14.5
-scale = Vector2(4, 4)
+offset_right = 82.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
 mouse_filter = 2
 mouse_default_cursor_shape = 2
 theme = ExtResource("2_0xm2m")
-text = "Games"
+theme_override_font_sizes/normal_font_size = 8
+text = "Algicosathlon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="ColorRect" parent="2Series"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="t" type="RichTextLabel" parent="2Series/2"]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_left = 12.0
+offset_top = 0.25
+offset_right = 82.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+theme_override_font_sizes/normal_font_size = 8
+text = "Coming soon"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -175,7 +282,7 @@ text = "Math"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="1" type="ColorRect" parent="3Math"]
+[node name="0" type="ColorRect" parent="3Math"]
 self_modulate = Color(1, 1, 1, 0)
 z_index = -20
 z_as_relative = false
@@ -184,18 +291,19 @@ offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 2
 
-[node name="t" type="RichTextLabel" parent="3Math/1"]
+[node name="t" type="RichTextLabel" parent="3Math/0"]
 z_index = -20
 z_as_relative = false
 layout_mode = 0
 offset_left = 12.0
-offset_right = 59.25
-offset_bottom = 14.25
-scale = Vector2(4, 4)
+offset_right = 82.0
+offset_bottom = 19.0
+scale = Vector2(3, 3)
 mouse_filter = 2
 mouse_default_cursor_shape = 2
 theme = ExtResource("2_0xm2m")
-text = "Games"
+theme_override_font_sizes/normal_font_size = 8
+text = "Coming soon"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -209,20 +317,50 @@ mouse_filter = 2
 color = Color(0.12, 0.049200002, 0.12, 1)
 
 [node name="text" type="RichTextLabel" parent="."]
+z_index = -100
 offset_left = 3.0
 offset_top = 85.0
 offset_right = 1075.0
 offset_bottom = 653.0
+mouse_filter = 2
 theme = ExtResource("2_0xm2m")
 theme_override_font_sizes/normal_font_size = 32
 theme_override_font_sizes/bold_font_size = 48
 theme_override_font_sizes/italics_font_size = 64
 bbcode_enabled = true
-text = "[i] Hello! [/i] 
-[b] This is a spoeksodasndoasnd [/b]
-\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cculpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"culpa qui officia deserunt mollit anim id est laborum.\"ulpa qui officia deserunt mollit anim id est laborum.\""
+text = "[i] Hey! [/i] 
+[b] My name is Ks[/b]
+This is a test site/portofolio
+Yes, this was made in GODOT
+
+Some about me:
+
+AAAAAAAAAA AAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAA AAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAA AAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAA
+V
+AAAAAAAAAA AAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAA
+
+AAAAAAAAAA AAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAA
+V
+V
+V
+AAAAAAAAAA AAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAA AAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAA AAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAA AAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAA AAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAA"
 horizontal_alignment = 1
 script = ExtResource("6_7mycd")
+
+[node name="Sprite2D" type="Sprite2D" parent="text"]
+position = Vector2(295, 307)
+texture = ExtResource("7_272bh")
+
+[node name="a" type="RichTextLabel" parent="text"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [connection signal="mouse_entered" from="0K\'" to="0K\'" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="0K\'" to="0K\'" method="_on_mouse_exited"]

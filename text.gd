@@ -8,6 +8,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	scale = Vector2(get_window().size-Vector2i(80,80)) / Vector2(1072,568)
-	position = Vector2(40,20) * scale + Vector2(0,60)
+	scale = Vector2(get_window().size) / Vector2(1152,648)
+	position = Vector2(40,80) * scale
+	$a.text = str(get_v_scroll_bar().value)
+	$Sprite2D.position = Vector2(295.0,307-get_v_scroll_bar().value)
 	pass
