@@ -16,9 +16,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	size = Vector2((get_window().size[0]+120)/4+28,60)
-	$RichTextLabel.position = Vector2(size[0]/4,(get_window().size[0]-1152)/(-60))
-	$RichTextLabel.scale = Vector2((get_window().size[0]+120.0)/288.0,(get_window().size[0]+120.0)/288.0)
+	scale = Vector2(get_window().size) / Vector2(1152,648)
+	position = Vector2(-28,0)*scale
 	if mouse_on and Input.is_action_just_pressed("click"):
 		Global.woosh = !Global.woosh
 	pass

@@ -4,325 +4,19 @@
 [ext_resource type="Theme" uid="uid://b5dxjrg5nt1f4" path="res://images/something.tres" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://bd4h3837krbv7" path="res://bap.gd" id="2_lquwl"]
 [ext_resource type="Script" uid="uid://cs1gkxm2k086t" path="res://bop.gd" id="3_1bvp3"]
-[ext_resource type="Texture2D" uid="uid://brpu4w365qdso" path="res://images/Arow button hollow.png" id="3_lquwl"]
+[ext_resource type="Script" uid="uid://cb4i32ui7wvql" path="res://boop.gd" id="5_272bh"]
 [ext_resource type="Script" uid="uid://hn88cim1pmu2" path="res://text.gd" id="6_7mycd"]
 [ext_resource type="Texture2D" uid="uid://cfpvobiy45wdm" path="res://index.icon.png" id="7_272bh"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="0K\'" type="NinePatchRect" parent="."]
-self_modulate = Color(1, 0.7490196, 0.27058825, 1)
-offset_left = -28.0
-offset_right = 250.0
-offset_bottom = 60.0
-mouse_filter = 0
-mouse_default_cursor_shape = 2
-texture = ExtResource("1_ig7tw")
-patch_margin_left = 60
-patch_margin_right = 60
-axis_stretch_horizontal = 1
-axis_stretch_vertical = 1
-script = ExtResource("2_lquwl")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="0K\'"]
-layout_mode = 0
-offset_left = 40.0
-offset_right = 87.25
-offset_bottom = 14.25
-scale = Vector2(4, 4)
-mouse_filter = 2
-mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
-text = "Ks' Corner"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="1Games" type="NinePatchRect" parent="."]
-self_modulate = Color(0.89349043, 0.23852724, 0.9999973, 1)
-z_index = -3
-z_as_relative = false
-offset_left = 225.0
-offset_right = 441.0
-offset_bottom = 60.0
-mouse_filter = 0
-mouse_force_pass_scroll_events = false
-mouse_default_cursor_shape = 2
-texture = ExtResource("3_lquwl")
-patch_margin_left = 36
-patch_margin_right = 36
-axis_stretch_horizontal = 1
-axis_stretch_vertical = 1
-script = ExtResource("3_1bvp3")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="1Games"]
-layout_mode = 0
-offset_left = 12.0
-offset_top = 0.25
-offset_right = 59.25
-offset_bottom = 14.5
-scale = Vector2(4, 4)
-mouse_filter = 2
-mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
-text = "Games"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="0" type="ColorRect" parent="1Games"]
-self_modulate = Color(1, 1, 1, 0)
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-mouse_filter = 2
-
-[node name="t" type="RichTextLabel" parent="1Games/0"]
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_left = 12.0
-offset_top = 0.25
-offset_right = 82.0
-offset_bottom = 19.25
-scale = Vector2(3, 3)
-mouse_filter = 2
-mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
-theme_override_font_sizes/normal_font_size = 8
-text = "Room sokoban"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="1" type="ColorRect" parent="1Games"]
-self_modulate = Color(1, 1, 1, 0)
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-mouse_filter = 2
-
-[node name="t" type="RichTextLabel" parent="1Games/1"]
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_left = 12.0
-offset_top = 0.25
-offset_right = 82.0
-offset_bottom = 19.25
-scale = Vector2(3, 3)
-mouse_filter = 2
-mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
-theme_override_font_sizes/normal_font_size = 8
-text = "Lav's Home"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="2" type="ColorRect" parent="1Games"]
-self_modulate = Color(1, 1, 1, 0)
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-mouse_filter = 2
-
-[node name="t" type="RichTextLabel" parent="1Games/2"]
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_left = 12.0
-offset_top = 0.25
-offset_right = 82.0
-offset_bottom = 19.25
-scale = Vector2(3, 3)
-mouse_filter = 2
-mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
-theme_override_font_sizes/normal_font_size = 8
-text = "U. R. G."
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="2Series" type="NinePatchRect" parent="."]
-self_modulate = Color(1, 0, 0.5333333, 1)
-z_index = -2
-z_as_relative = false
-offset_right = 216.0
-offset_bottom = 60.0
-mouse_filter = 0
-mouse_force_pass_scroll_events = false
-mouse_default_cursor_shape = 2
-texture = ExtResource("3_lquwl")
-patch_margin_left = 36
-patch_margin_right = 36
-axis_stretch_horizontal = 1
-axis_stretch_vertical = 1
-script = ExtResource("3_1bvp3")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="2Series"]
-layout_mode = 0
-offset_left = 12.0
-offset_top = 0.25
-offset_right = 59.25
-offset_bottom = 14.5
-scale = Vector2(4, 4)
-mouse_filter = 2
-mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
-text = "Series"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="0" type="ColorRect" parent="2Series"]
-self_modulate = Color(1, 1, 1, 0)
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-mouse_filter = 2
-
-[node name="t" type="RichTextLabel" parent="2Series/0"]
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_left = 12.0
-offset_top = 0.25
-offset_right = 82.0
-offset_bottom = 19.25
-scale = Vector2(3, 3)
-mouse_filter = 2
-mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
-theme_override_font_sizes/normal_font_size = 8
-text = "T.A.M.R."
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="1" type="ColorRect" parent="2Series"]
-self_modulate = Color(1, 1, 1, 0)
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-mouse_filter = 2
-
-[node name="t" type="RichTextLabel" parent="2Series/1"]
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_left = 12.0
-offset_top = 0.25
-offset_right = 82.0
-offset_bottom = 19.25
-scale = Vector2(3, 3)
-mouse_filter = 2
-mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
-theme_override_font_sizes/normal_font_size = 8
-text = "Algicosathlon"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="2" type="ColorRect" parent="2Series"]
-self_modulate = Color(1, 1, 1, 0)
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-mouse_filter = 2
-
-[node name="t" type="RichTextLabel" parent="2Series/2"]
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_left = 12.0
-offset_top = 0.25
-offset_right = 82.0
-offset_bottom = 19.25
-scale = Vector2(3, 3)
-mouse_filter = 2
-mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
-theme_override_font_sizes/normal_font_size = 8
-text = "Coming soon"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="3Math" type="NinePatchRect" parent="."]
-self_modulate = Color(0.44916677, 0, 0.77, 1)
-z_index = -1
-z_as_relative = false
-offset_right = 216.0
-offset_bottom = 60.0
-mouse_filter = 0
-mouse_force_pass_scroll_events = false
-mouse_default_cursor_shape = 2
-texture = ExtResource("3_lquwl")
-patch_margin_left = 36
-patch_margin_right = 36
-script = ExtResource("3_1bvp3")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="3Math"]
-layout_mode = 0
-offset_left = 12.0
-offset_top = 0.25
-offset_right = 59.25
-offset_bottom = 14.5
-scale = Vector2(4, 4)
-mouse_filter = 2
-mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
-text = "Math"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="0" type="ColorRect" parent="3Math"]
-self_modulate = Color(1, 1, 1, 0)
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-mouse_filter = 2
-
-[node name="t" type="RichTextLabel" parent="3Math/0"]
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_left = 12.0
-offset_right = 82.0
-offset_bottom = 19.0
-scale = Vector2(3, 3)
-mouse_filter = 2
-mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
-theme_override_font_sizes/normal_font_size = 8
-text = "Coming soon"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ColorRect" type="ColorRect" parent="."]
-z_index = -4096
-offset_left = -3378.0
-offset_top = -2476.0
-offset_right = 23220.0
-offset_bottom = 29767.0
-mouse_filter = 2
-color = Color(0.12, 0.049200002, 0.12, 1)
-
 [node name="text" type="RichTextLabel" parent="."]
 z_index = -100
 offset_left = 3.0
-offset_top = 85.0
-offset_right = 1075.0
+offset_top = 62.0
+offset_right = 1146.0
 offset_bottom = 653.0
-mouse_filter = 2
+mouse_filter = 1
 theme = ExtResource("2_0xm2m")
 theme_override_font_sizes/normal_font_size = 32
 theme_override_font_sizes/bold_font_size = 48
@@ -362,11 +56,341 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="0K\'" type="NinePatchRect" parent="."]
+self_modulate = Color(1, 0.7490196, 0.27058825, 1)
+offset_left = -30.0
+offset_right = 320.0
+offset_bottom = 60.0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+texture = ExtResource("1_ig7tw")
+patch_margin_left = 60
+patch_margin_right = 60
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("2_lquwl")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="0K\'"]
+layout_mode = 0
+offset_left = 76.0
+offset_right = 123.25
+offset_bottom = 14.25
+scale = Vector2(4, 4)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+text = "Ks' Corner"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1Games" type="NinePatchRect" parent="."]
+self_modulate = Color(0.89349043, 0.23852724, 0.9999973, 1)
+z_index = -3
+z_as_relative = false
+offset_left = 272.0
+offset_right = 562.0
+offset_bottom = 60.0
+mouse_filter = 0
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+texture = ExtResource("1_ig7tw")
+patch_margin_left = 36
+patch_margin_right = 36
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("3_1bvp3")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="1Games"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 0.25
+offset_right = 95.25
+offset_bottom = 14.5
+scale = Vector2(4, 4)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+text = "Games"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="0" type="ColorRect" parent="1Games"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+script = ExtResource("5_272bh")
+
+[node name="t" type="RichTextLabel" parent="1Games/0"]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_top = 0.25
+offset_right = 90.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+theme_override_font_sizes/normal_font_size = 8
+text = "Room Sokoban"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="ColorRect" parent="1Games"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+script = ExtResource("5_272bh")
+
+[node name="t" type="RichTextLabel" parent="1Games/1"]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_top = 0.25
+offset_right = 90.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+theme_override_font_sizes/normal_font_size = 8
+text = "Lavender's Home"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="ColorRect" parent="1Games"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+script = ExtResource("5_272bh")
+
+[node name="t" type="RichTextLabel" parent="1Games/2"]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_top = 0.25
+offset_right = 90.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+theme_override_font_sizes/normal_font_size = 8
+text = "Unn. Rhythm Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2Series" type="NinePatchRect" parent="."]
+self_modulate = Color(1, 0, 0.5333333, 1)
+z_index = -2
+z_as_relative = false
+offset_left = 514.0
+offset_right = 804.0
+offset_bottom = 60.0
+mouse_filter = 0
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+texture = ExtResource("1_ig7tw")
+patch_margin_left = 36
+patch_margin_right = 36
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("3_1bvp3")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="2Series"]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 0.25
+offset_right = 96.25
+offset_bottom = 14.5
+scale = Vector2(4, 4)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+text = "Series"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="0" type="ColorRect" parent="2Series"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+script = ExtResource("5_272bh")
+
+[node name="t" type="RichTextLabel" parent="2Series/0"]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_top = 0.25
+offset_right = 90.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+theme_override_font_sizes/normal_font_size = 8
+text = "T. A. Marble Race"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="ColorRect" parent="2Series"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+script = ExtResource("5_272bh")
+
+[node name="t" type="RichTextLabel" parent="2Series/1"]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_top = 0.25
+offset_right = 90.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+theme_override_font_sizes/normal_font_size = 8
+text = "Algicosathlon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="ColorRect" parent="2Series"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+script = ExtResource("5_272bh")
+
+[node name="t" type="RichTextLabel" parent="2Series/2"]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_top = 0.25
+offset_right = 90.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+theme_override_font_sizes/normal_font_size = 8
+text = "aaaaaaaaaaaaa"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3Math" type="NinePatchRect" parent="."]
+self_modulate = Color(0.44916677, 0, 0.77, 1)
+z_index = -1
+z_as_relative = false
+offset_left = 756.0
+offset_right = 1046.0
+offset_bottom = 60.0
+mouse_filter = 0
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+texture = ExtResource("1_ig7tw")
+patch_margin_left = 36
+patch_margin_right = 36
+script = ExtResource("3_1bvp3")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="3Math"]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 0.25
+offset_right = 92.25
+offset_bottom = 14.5
+scale = Vector2(4, 4)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+text = "Math"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="0" type="ColorRect" parent="3Math"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+script = ExtResource("5_272bh")
+
+[node name="t" type="RichTextLabel" parent="3Math/0"]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_top = 0.25
+offset_right = 90.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_0xm2m")
+theme_override_font_sizes/normal_font_size = 8
+text = "Coming soon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -4096
+offset_left = -3378.0
+offset_top = -2476.0
+offset_right = 23220.0
+offset_bottom = 29767.0
+mouse_filter = 2
+color = Color(0.12, 0.049200002, 0.12, 1)
+
 [connection signal="mouse_entered" from="0K\'" to="0K\'" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="0K\'" to="0K\'" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="1Games" to="1Games" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="1Games" to="1Games" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="1Games/0" to="1Games/0" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="1Games/0" to="1Games/0" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="1Games/1" to="1Games/1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="1Games/1" to="1Games/1" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="1Games/2" to="1Games/2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="1Games/2" to="1Games/2" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="2Series" to="2Series" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="2Series" to="2Series" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="2Series/0" to="2Series/0" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="2Series/0" to="2Series/0" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="2Series/1" to="2Series/1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="2Series/1" to="2Series/1" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="2Series/2" to="2Series/2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="2Series/2" to="2Series/2" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="3Math" to="3Math" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="3Math" to="3Math" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="3Math/0" to="3Math/0" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="3Math/0" to="3Math/0" method="_on_mouse_exited"]
