@@ -15,4 +15,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	$t.scale = Vector2(Global.wa[0] * 3,Global.wa[0] * 3)
+	$t.position = Vector2(-4.0/Global.wa[0],0)
 	pass
