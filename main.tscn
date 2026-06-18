@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://clv1aeffgobhx"]
+[gd_scene format=3 uid="uid://clv1aeffgobhx"]
 
 [ext_resource type="Texture2D" uid="uid://bnmhfqq4u2p0q" path="res://images/Arow button.png" id="1_ig7tw"]
 [ext_resource type="Theme" uid="uid://b5dxjrg5nt1f4" path="res://images/something.tres" id="2_0xm2m"]
@@ -7,9 +7,9 @@
 [ext_resource type="Script" uid="uid://cb4i32ui7wvql" path="res://boop.gd" id="5_272bh"]
 [ext_resource type="Script" uid="uid://hn88cim1pmu2" path="res://text.gd" id="6_7mycd"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=1138968870]
 
-[node name="text" type="RichTextLabel" parent="."]
+[node name="text" type="RichTextLabel" parent="." unique_id=1342643288]
 z_index = -100
 offset_left = 3.0
 offset_top = 62.0
@@ -24,12 +24,12 @@ bbcode_enabled = true
 horizontal_alignment = 1
 script = ExtResource("6_7mycd")
 
-[node name="a" type="RichTextLabel" parent="text"]
+[node name="a" type="RichTextLabel" parent="text" unique_id=1170230092]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="0K\'" type="NinePatchRect" parent="."]
+[node name="0K\'" type="NinePatchRect" parent="." unique_id=1771300790]
 self_modulate = Color(1, 0.7490196, 0.27058825, 1)
 offset_left = -30.0
 offset_right = 320.0
@@ -43,7 +43,7 @@ axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
 script = ExtResource("2_lquwl")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="0K\'"]
+[node name="RichTextLabel" type="RichTextLabel" parent="0K\'" unique_id=1446314761]
 layout_mode = 0
 offset_left = 60.0
 offset_right = 108.0
@@ -56,7 +56,7 @@ text = "Ks' Corner"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="1Games" type="NinePatchRect" parent="."]
+[node name="1Games" type="NinePatchRect" parent="." unique_id=2029835966]
 self_modulate = Color(0.89349043, 0.23852724, 0.9999973, 1)
 z_index = -3
 z_as_relative = false
@@ -72,7 +72,7 @@ axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
 script = ExtResource("3_1bvp3")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="1Games"]
+[node name="RichTextLabel" type="RichTextLabel" parent="1Games" unique_id=1915046558]
 layout_mode = 0
 offset_left = 48.0
 offset_right = 95.25
@@ -85,7 +85,7 @@ text = "Games"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="0" type="ColorRect" parent="1Games"]
+[node name="0" type="ColorRect" parent="1Games" unique_id=1883904503]
 self_modulate = Color(1, 1, 1, 0)
 z_index = -20
 z_as_relative = false
@@ -98,7 +98,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 2
 script = ExtResource("5_272bh")
 
-[node name="t" type="RichTextLabel" parent="1Games/0"]
+[node name="t" type="RichTextLabel" parent="1Games/0" unique_id=1487414111]
 z_index = -20
 z_as_relative = false
 layout_mode = 0
@@ -113,7 +113,7 @@ text = "Room Sokoban"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="1" type="ColorRect" parent="1Games"]
+[node name="1" type="ColorRect" parent="1Games" unique_id=1746094435]
 self_modulate = Color(1, 1, 1, 0)
 z_index = -20
 z_as_relative = false
@@ -124,7 +124,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 2
 script = ExtResource("5_272bh")
 
-[node name="t" type="RichTextLabel" parent="1Games/1"]
+[node name="t" type="RichTextLabel" parent="1Games/1" unique_id=1346377911]
 z_index = -20
 z_as_relative = false
 layout_mode = 0
@@ -140,7 +140,7 @@ text = "Lavender's Home"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="2" type="ColorRect" parent="1Games"]
+[node name="2" type="ColorRect" parent="1Games" unique_id=218880964]
 self_modulate = Color(1, 1, 1, 0)
 z_index = -20
 z_as_relative = false
@@ -151,7 +151,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 2
 script = ExtResource("5_272bh")
 
-[node name="t" type="RichTextLabel" parent="1Games/2"]
+[node name="t" type="RichTextLabel" parent="1Games/2" unique_id=1759285968]
 z_index = -20
 z_as_relative = false
 layout_mode = 0
@@ -167,7 +167,7 @@ text = "Unn. Rhythm Game"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="2Series" type="NinePatchRect" parent="."]
+[node name="2Series" type="NinePatchRect" parent="." unique_id=1899935413]
 self_modulate = Color(1, 0, 0.5333333, 1)
 z_index = -5
 z_as_relative = false
@@ -184,7 +184,7 @@ axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
 script = ExtResource("3_1bvp3")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="2Series"]
+[node name="RichTextLabel" type="RichTextLabel" parent="2Series" unique_id=1142208144]
 layout_mode = 0
 offset_left = 49.0
 offset_top = 0.25
@@ -198,7 +198,7 @@ text = "Series"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="0" type="ColorRect" parent="2Series"]
+[node name="0" type="ColorRect" parent="2Series" unique_id=782414252]
 self_modulate = Color(1, 1, 1, 0)
 z_index = -20
 z_as_relative = false
@@ -209,7 +209,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 2
 script = ExtResource("5_272bh")
 
-[node name="t" type="RichTextLabel" parent="2Series/0"]
+[node name="t" type="RichTextLabel" parent="2Series/0" unique_id=1920618960]
 z_index = -20
 z_as_relative = false
 layout_mode = 0
@@ -225,7 +225,7 @@ text = "T. A. Marble Race"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="1" type="ColorRect" parent="2Series"]
+[node name="1" type="ColorRect" parent="2Series" unique_id=253354119]
 self_modulate = Color(1, 1, 1, 0)
 z_index = -20
 z_as_relative = false
@@ -236,7 +236,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 2
 script = ExtResource("5_272bh")
 
-[node name="t" type="RichTextLabel" parent="2Series/1"]
+[node name="t" type="RichTextLabel" parent="2Series/1" unique_id=761857940]
 z_index = -20
 z_as_relative = false
 layout_mode = 0
@@ -252,7 +252,7 @@ text = "Algicosathlon"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="2" type="ColorRect" parent="2Series"]
+[node name="2" type="ColorRect" parent="2Series" unique_id=1327150230]
 self_modulate = Color(1, 1, 1, 0)
 z_index = -20
 z_as_relative = false
@@ -263,7 +263,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 2
 script = ExtResource("5_272bh")
 
-[node name="t" type="RichTextLabel" parent="2Series/2"]
+[node name="t" type="RichTextLabel" parent="2Series/2" unique_id=18137539]
 z_index = -20
 z_as_relative = false
 layout_mode = 0
@@ -279,7 +279,7 @@ text = "aaaaaaaaaaaaa"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="3Math" type="NinePatchRect" parent="."]
+[node name="3Math" type="NinePatchRect" parent="." unique_id=639518234]
 self_modulate = Color(0.44916677, 0, 0.77, 1)
 z_index = -6
 z_as_relative = false
@@ -294,7 +294,7 @@ patch_margin_left = 36
 patch_margin_right = 36
 script = ExtResource("3_1bvp3")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="3Math"]
+[node name="RichTextLabel" type="RichTextLabel" parent="3Math" unique_id=2068174595]
 layout_mode = 0
 offset_left = 45.0
 offset_top = 0.25
@@ -308,7 +308,7 @@ text = "Math"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="0" type="ColorRect" parent="3Math"]
+[node name="0" type="ColorRect" parent="3Math" unique_id=395442840]
 self_modulate = Color(1, 1, 1, 0)
 z_index = -20
 z_as_relative = false
@@ -319,7 +319,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 2
 script = ExtResource("5_272bh")
 
-[node name="t" type="RichTextLabel" parent="3Math/0"]
+[node name="t" type="RichTextLabel" parent="3Math/0" unique_id=1685364838]
 z_index = -20
 z_as_relative = false
 layout_mode = 0
@@ -335,7 +335,7 @@ text = "Coming soon"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2055398350]
 z_index = -4096
 offset_left = -3378.0
 offset_top = -2476.0
@@ -344,6 +344,7 @@ offset_bottom = 29767.0
 mouse_filter = 2
 color = Color(0.12, 0.049200002, 0.12, 1)
 
+[connection signal="meta_clicked" from="text" to="text" method="_on_meta_clicked"]
 [connection signal="mouse_entered" from="0K\'" to="0K\'" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="0K\'" to="0K\'" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="1Games" to="1Games" method="_on_mouse_entered"]

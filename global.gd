@@ -12,9 +12,16 @@ Made in Godot [img=width=36emxheight=36em]res://icon.svg[/img]
 
 About me:
 [left]Name: Ks
+
 Age: 17
+
 Nationality: Brazilian  [img=width=36emxheight=36em]res://images/Brazil.png[/img]
 
+Interests: Math, Coding, Rhythm!
+
+Favourite animal: Huskys!
+
+Current favourite song: [url=https://www.youtube.com/watch?v=GaqDu16Rfe4&list=RDGaqDu16Rfe4]Mirror[/url]
 [/left]
 ",
 "Games",
