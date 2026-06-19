@@ -14,9 +14,9 @@ func _process(delta: float) -> void:
 		position = Vector2(30,60)
 	else:
 		text = Global.text[Global.page]
-		size = Vector2(1143.0,591.0) * Global.wa/4 - Vector2(60,0)
+		size = Vector2(1143.0,591.0) * Global.wa/2 - Vector2(10,0)
 		position = Vector2(30,240)
-		scale = Vector2.ONE * 4
+		scale = Vector2.ONE * 2
 	pass
 
 
