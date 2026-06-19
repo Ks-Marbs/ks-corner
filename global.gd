@@ -11,16 +11,19 @@ Don't except anything too serious, all in here is made for fun!
 Made in Godot [img=width=36emxheight=36em]res://icon.svg[/img]
 
 About me:
+	My name is Ks! Well, my internet name is Ks
+I'm currently 17, was born and live in Brazil, and am fluent in both Portuguese and English.
+I always wanted to show people some of my interests and projects and kewl stuff that may come, so I made this website, without knowing a single bit of HTML.
+If you like any of the following: M4th, Programming, Colors, Linguistics, Boops;
+This is a place for you! If you don't, you are still welcome!
+
+
+TL;DR:
 [left]Name: Ks
-
 Age: 17
-
 Nationality: Brazilian  [img=width=36emxheight=36em]res://images/Brazil.png[/img]
-
 Interests: Math, Coding, Rhythm!
-
-Favourite animal: Huskys!
-
+Favourite animal: Dogz
 Current favourite song: [url=https://www.youtube.com/watch?v=GaqDu16Rfe4&list=RDGaqDu16Rfe4]Mirror[/url]
 [/left]
 ",
