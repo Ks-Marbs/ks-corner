@@ -23,8 +23,8 @@ func _process(delta: float) -> void:
 		$RichTextLabel.position = Vector2(48*Global.wa[0],12.5/Global.wa[0]-12.5)
 		size = Vector2(320*Global.wa[0],60)
 	else:
-		scale = Vector2.ONE * 4
-		size = Vector2(get_window().size[0]/4-72,60)
+		scale = Vector2.ONE * 8
+		size = Vector2(get_window().size[0]/8-72,60)
 		$RichTextLabel.scale = Vector2(4,4)
 		$RichTextLabel.position = Vector2(size[0]/2-90,0)
 	if mouse_on and Input.is_action_just_pressed("click"):

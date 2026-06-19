@@ -54,10 +54,10 @@ func _process(delta: float) -> void:
 						position += (Vector2(-400,0) - position)/15.0
 
 	else:
-		scale = Vector2.ONE * 4
+		scale = Vector2.ONE * 8
 		size = Vector2(get_window().size[0]-int(str(self.name)[0])*60,60)
 		if Global.woosh:
-			position += (Vector2(0,int(str(self.name)[0]))*240 - position)/15.0
+			position += (Vector2(0,int(str(self.name)[0]))*480 - position)/15.0
 			if Input.is_action_just_pressed("click") and mouse_on:
 				Global.page = int(str(self.name)[0])
 		else:
