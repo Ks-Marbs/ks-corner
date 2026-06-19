@@ -11,6 +11,7 @@ Don't except anything too serious, all in here is made for fun!
 Made in Godot [img=width=36emxheight=36em]res://icon.svg[/img]
 
 About me:
+	this is test N9
 	My name is Ks! Well, my internet name is Ks
 I'm currently 17, was born and live in Brazil, and am fluent in both Portuguese and English.
 I always wanted to show people some of my interests and projects and kewl stuff that may come, so I made this website, without knowing a single bit of HTML.
