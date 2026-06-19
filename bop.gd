@@ -22,7 +22,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	$RichTextLabel.scale = Vector2(Global.wa[0] * 4,Global.wa[0] * 4)
 	$RichTextLabel.position = Vector2(48*Global.wa[0],12.5/Global.wa[0]-12.5)
-	if !(OS.get_name() == "Android" or OS.get_name() == "iOS"):
+	if !(OS.has_feature("web_android") or OS.has_feature("web_iOS")):
 		size = Vector2(290.0*Global.wa[0],60.0)
 		for i in range(1,get_child_count()):
 			var j = get_child(i)

@@ -18,7 +18,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	position = Vector2.ZERO
-	if !(OS.get_name() == "Android" or OS.get_name() == "iOS"):
+	if!(OS.has_feature("web_android") or OS.has_feature("web_iOS")):
 		$RichTextLabel.scale = Vector2(Global.wa[0] * 4,Global.wa[0] * 4)
 		$RichTextLabel.position = Vector2(48*Global.wa[0],12.5/Global.wa[0]-12.5)
 		size = Vector2(320*Global.wa[0],60)
