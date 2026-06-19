@@ -8,9 +8,15 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	text = Global.text[Global.page]
-	size = Vector2(1143.0,591.0) * Global.wa - Vector2(60,0)
-	position = Vector2(30,60)
+	if !(OS.get_name() == "Android" or OS.get_name() == "iOS"):
+		text = Global.text[Global.page]
+		size = Vector2(1143.0,591.0) * Global.wa - Vector2(60,0)
+		position = Vector2(30,60)
+	else:
+		text = Global.text[Global.page]
+		size = Vector2(1143.0,591.0) * Global.wa/2 - Vector2(60,0)
+		position = Vector2(30,240)
+		scale = Vector2.ONE * 2
 	pass
 
 

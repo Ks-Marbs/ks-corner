@@ -22,7 +22,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	$RichTextLabel.scale = Vector2(Global.wa[0] * 4,Global.wa[0] * 4)
 	$RichTextLabel.position = Vector2(48*Global.wa[0],12.5/Global.wa[0]-12.5)
-	if get_window().size[0] > get_window().size[1]:
+	if !(OS.get_name() == "Android" or OS.get_name() == "iOS"):
 		size = Vector2(290.0*Global.wa[0],60.0)
 		for i in range(1,get_child_count()):
 			var j = get_child(i)
@@ -54,13 +54,14 @@ func _process(delta: float) -> void:
 						position += (Vector2(-400,0) - position)/15.0
 
 	else:
+		scale = Vector2.ONE * 4
 		size = Vector2(get_window().size[0]-int(str(self.name)[0])*60,60)
 		if Global.woosh:
-			position += (Vector2(0,int(str(self.name)[0]))*60- position)/15.0
+			position += (Vector2(0,int(str(self.name)[0]))*240 - position)/15.0
 			if Input.is_action_just_pressed("click") and mouse_on:
 				Global.page = int(str(self.name)[0])
 		else:
-			position += (Vector2(0,-200) - position)/15.0
+			position += (Vector2(0,-800) - position)/15.0
 		$RichTextLabel.scale = Vector2(4,4)
 		$RichTextLabel.position = Vector2(size[0]/2-90,0)
 	if !Global.woosh: on = false

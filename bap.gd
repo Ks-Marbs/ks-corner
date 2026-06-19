@@ -2,6 +2,7 @@ extends NinePatchRect
 var mouse_on := false
 
 func _on_mouse_entered() -> void:
+	Global.woosh = true
 	mouse_on = true
 	pass # Replace with function body.
 
@@ -17,14 +18,15 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	position = Vector2.ZERO
-	if get_window().size[0] > get_window().size[1]:
+	if !(OS.get_name() == "Android" or OS.get_name() == "iOS"):
 		$RichTextLabel.scale = Vector2(Global.wa[0] * 4,Global.wa[0] * 4)
 		$RichTextLabel.position = Vector2(48*Global.wa[0],12.5/Global.wa[0]-12.5)
 		size = Vector2(320*Global.wa[0],60)
 	else:
-		size = Vector2(get_window().size[0]-18,60)
+		scale = Vector2.ONE * 4
+		size = Vector2(get_window().size[0]/4-72,60)
 		$RichTextLabel.scale = Vector2(4,4)
 		$RichTextLabel.position = Vector2(size[0]/2-90,0)
 	if mouse_on and Input.is_action_just_pressed("click"):
-		Global.woosh = !Global.woosh
+		Global.page = 0
 	pass
