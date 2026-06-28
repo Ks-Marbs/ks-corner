@@ -17,7 +17,7 @@ Made in Godot [img=width=36emxheight=36em]res://icon.svg[/img]
 
 
 About me:
-sthis is test N10
+sthis is test N11
 My name is Ks! Well, my internet name is Ks
 
 I'm currently 17, was born and live in Brazil, and am fluent in both Portuguese and English.
@@ -72,7 +72,7 @@ Demos here:
 [/cell]
 [table=3,center,center]
 [cell]
-[b]Lavender's Home[/b]
+[b]Lavender\'s Home[/b]
 Collab with Seni foxy!
 It comes with lore, ooooh~
 Updates whenever people unlock updates
@@ -86,60 +86,57 @@ Demos here:
 [/table]
 
 ",
-"Series",
-"Math"],
-["[i] Oi! [/i] 
+"[i]Series[/i]
 
-[b] Bem vind@ ao Ks' Corner[/b] 
-
+[b]At the very start, I used to make series! 
+(some may be rebooted, who knows?)[/b]
 
 
-Esse é meu site/portifólio 
+[table=1,center,center]
+[cell]
+[b]The amazing marble race[/b]
+First ever series 
+(and only one i actually completed, oof)
+It's a marble race, thats it
+Watch here:
+S1:[wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://youtube.com/playlist?list=PLaefg6KsKPQGoE0bUZSxaixYdwf9EODfy&si=748m1PlnaDNFTdms]Click me![/url][/color][/wave]
+S2:[wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://youtube.com/playlist?list=PLaefg6KsKPQFg1SVBTMDz8UmbGJG1K9mQ&si=UgjmT1LA0O3cNLue]Click me![/url][/color][/wave]
+[/cell]
 
-It's mostly a small collection of my projects and some of my interests! 
+[cell]
+[img=top,left,width=360emxheight=204em]res://images/AMR1.jpg[/img]  [img=top,left,width=360emxheight=204em]res://images/AMR2.jpg[/img]
+[/cell]
+[cell]  [/cell]
+[cell]  [/cell]
+[cell]
+[b]100 Lives Marble Race[/b]
+Made like...4 years ago?
+Never completed it...
+Maybe I should one day
+Watch here:[wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://youtube.com/playlist?list=PLaefg6KsKPQG3O65eZUNbvwSEtgMsXxIB&si=1LjwjWk6yLWzObyV]Click me![/url][/color][/wave]
+[/cell]
 
-Don't except anything too serious, all in here is made for fun!
-[wave amp=50.0 freq=4.0 connected=0][color=gold]~(^w^)~[/color][/wave]
+[cell]
+[img=top,left,width=360emxheight=204em]res://images/LMR.jpg[/img]
+[/cell]
+[cell]  [/cell]
+[cell]  [/cell]
+[cell]
+[b]Algicosathlon[/b]
+To be rebooted
+Its way too old T-T
+Watch? here:[wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://youtube.com/playlist?list=PLaefg6KsKPQEZb6F5BPx3JUm7hd2vqbRj&si=P4TwMIcXRnNb7afV]Click me![/url][/color][/wave]
+[/cell]
+[cell]
+[img=top,left,width=360emxheight=204em]res://images/A.jpg[/img]
+[/cell]
+[cell]  [/cell]
+[cell]  [/cell]
 
-Made in Godot [img=width=36emxheight=36em]res://icon.svg[/img]
-
-
-About me:
-sthis is test N10
-My name is Ks! Well, my internet name is Ks
-
-I'm currently 17, was born and live in Brazil, and am fluent in both Portuguese and English.
-
-I always wanted to show people some of my interests and projects and kewl stuff that may come, so I made this website, without knowing a single bit of HTML.
-
-If you like any of the following: M4th, Programming, Colors, Linguistics, Boops;
-
-This is a place for you! If you don't, you are still welcome!
-
-[rainbow freq=0.2 speed=1.3]48657861646563696D616C20697320636F6F6C[/rainbow]
-
-
-TL;DR:
-[left][ul]Name: Ks
-Age: 17
-Nationality: Brazilian  [img=width=36emxheight=36em]res://images/Brazil.png[/img]
-Interests: Math, Coding, Rhythm!
-Favourite animal: Dogz
-Current favourite song: [url=https://www.youtube.com/watch?v=GaqDu16Rfe4&list=RDGaqDu16Rfe4]Mirror[/url]
-[/ul][/left]
+[/table]
 ",
-"[i]Games[/i]
-[b]These are some of my games! 
-(might be demos)[/b]
-
-
-[b]Room Sokoban   [/b]
-This was my first game!
-
-
-",
-"Series",
-"Math"]
+"Math
+coming soon"]
 ]
 var page := 0
 var lang := 0
