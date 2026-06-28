@@ -58,11 +58,12 @@ func _process(delta: float) -> void:
 		size = Vector2(get_window().size[0]/4-int(str(self.name)[0])*60,60)
 		if Global.woosh:
 			position += (Vector2(0,int(str(self.name)[0]))*240 - position)/15.0
-			if Input.is_action_just_pressed("click") and mouse_on:
-				Global.page = int(str(self.name)[0])
 		else:
 			position += (Vector2(0,-800) - position)/15.0
 		$RichTextLabel.scale = Vector2(4,4)
 		$RichTextLabel.position = Vector2(size[0]/2-90,0)
 	if !Global.woosh: on = false
+	else:
+		if Input.is_action_just_pressed("click") and mouse_on:
+			Global.page = int(str(self.name)[0])
 	pass

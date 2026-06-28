@@ -22,6 +22,8 @@ theme_override_font_sizes/bold_font_size = 48
 theme_override_font_sizes/italics_font_size = 64
 bbcode_enabled = true
 horizontal_alignment = 1
+justification_flags = 195
+visible_characters_behavior = 1
 script = ExtResource("6_7mycd")
 
 [node name="a" type="RichTextLabel" parent="text" unique_id=1170230092]
@@ -337,10 +339,10 @@ vertical_alignment = 1
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=2055398350]
 z_index = -4096
-offset_left = -3378.0
-offset_top = -2476.0
-offset_right = 23220.0
-offset_bottom = 29767.0
+offset_left = -3456.0
+offset_top = -2473.0
+offset_right = 23142.0
+offset_bottom = 29770.0
 mouse_filter = 2
 color = Color(0.12, 0.049200002, 0.12, 1)
 
