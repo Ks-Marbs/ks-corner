@@ -29,5 +29,5 @@ func _process(delta: float) -> void:
 		$RichTextLabel.position = Vector2(size[0]/2-90,0)
 	if mouse_on and Input.is_action_just_pressed("click"):
 		Global.page = 0
-		Global.woosh = false
+		if Global.woosh: Global.woosh = false
 	pass
