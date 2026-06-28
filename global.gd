@@ -17,7 +17,7 @@ Made in Godot [img=width=36emxheight=36em]res://icon.svg[/img]
 
 
 About me:
-sthis is test N11
+This is test N12
 My name is Ks! Well, my internet name is Ks
 
 I'm currently 17, was born and live in Brazil, and am fluent in both Portuguese and English.
@@ -51,8 +51,7 @@ Current favourite song: [url=https://www.youtube.com/watch?v=GaqDu16Rfe4&list=RD
 This was my first Godot game!
 It's a simple Sokoban game
 with some extra mechanics.
-Play here:
-[wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://ks-marbs.github.io/room_sokoban/]Click me![/url][/color][/wave]
+Play here: [wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://ks-marbs.github.io/room_sokoban/]Click me![/url][/color][/wave]
 [/cell]
 [cell]  [/cell]
 [cell]
@@ -67,8 +66,7 @@ Play here:
 Not so simple Rhythm game, 
 also made in Godot!
 Currently in progress
-Demos here:
-[wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://github.com/Ks-Marbs/rhythm-game]Click me![/url][/color][/wave]
+Demos here: [wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://github.com/Ks-Marbs/rhythm-game]Click me![/url][/color][/wave]
 [/cell]
 [table=3,center,center]
 [cell]
@@ -76,8 +74,7 @@ Demos here:
 Collab with Seni foxy!
 It comes with lore, ooooh~
 Updates whenever people unlock updates
-Demos here:
-[wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://github.com/Ks-Marbs/lavender-s-home]Click me![/url][/color][/wave]
+Demos here: [wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://github.com/Ks-Marbs/lavender-s-home]Click me![/url][/color][/wave]
 [/cell]
 [cell]  [/cell]
 [cell]
