@@ -1,10 +1,10 @@
 extends NinePatchRect
 var mouse_on := false
-var clicks := true
+var clicks := 0
 func _on_mouse_entered() -> void:
 	Global.woosh = true
 	mouse_on = true
-	clicks = !clicks
+	clicks += 1
 	pass # Replace with function body.
 
 
@@ -29,8 +29,9 @@ func _process(delta: float) -> void:
 		$RichTextLabel.scale = Vector2(4,4)
 		$RichTextLabel.position = Vector2(size[0]/2-90,0)
 	if mouse_on and Input.is_action_just_pressed("click"):
-		if clicks:
+		if clicks == 0:
 			Global.page = 0
 			Global.woosh = false
-			clicks = false
+			clicks = 0
+		clicks=0
 	pass
