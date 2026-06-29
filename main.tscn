@@ -6,6 +6,8 @@
 [ext_resource type="Script" uid="uid://cs1gkxm2k086t" path="res://bop.gd" id="3_1bvp3"]
 [ext_resource type="Script" uid="uid://cb4i32ui7wvql" path="res://boop.gd" id="5_272bh"]
 [ext_resource type="Script" uid="uid://hn88cim1pmu2" path="res://text.gd" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://bk1p37dbbiy66" path="res://images/bg.png" id="7_5vw27"]
+[ext_resource type="Script" uid="uid://ca8vl5myse2s7" path="res://texture_rect.gd" id="8_kek77"]
 
 [node name="Node2D" type="Node2D" unique_id=1138968870]
 
@@ -59,7 +61,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="1Games" type="NinePatchRect" parent="." unique_id=2029835966]
-self_modulate = Color(0.89349043, 0.23852724, 0.9999973, 1)
+self_modulate = Color(0.89411765, 0.23921569, 1, 1)
 z_index = -3
 z_as_relative = false
 offset_left = 292.0
@@ -119,7 +121,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="3Math" type="NinePatchRect" parent="." unique_id=639518234]
-self_modulate = Color(0.44916677, 0, 0.77, 1)
+self_modulate = Color(0.4509804, 0, 0.76862746, 1)
 z_index = -6
 z_as_relative = false
 offset_left = 756.0
@@ -174,14 +176,16 @@ text = "Coming soon"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=2055398350]
-z_index = -4096
-offset_left = -3456.0
-offset_top = -2473.0
-offset_right = 23142.0
-offset_bottom = 29770.0
+[node name="TextureRect" type="TextureRect" parent="." unique_id=69623348]
+z_index = -260
+offset_left = -756.0
+offset_top = -3104.0
+offset_right = 12483.0
+offset_bottom = 4765.0
 mouse_filter = 2
-color = Color(0.12, 0.049200002, 0.12, 1)
+texture = ExtResource("7_5vw27")
+stretch_mode = 1
+script = ExtResource("8_kek77")
 
 [connection signal="meta_clicked" from="text" to="text" method="_on_meta_clicked"]
 [connection signal="mouse_entered" from="0K\'" to="0K\'" method="_on_mouse_entered"]
