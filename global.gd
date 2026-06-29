@@ -17,14 +17,14 @@ Made in Godot [img=width=36emxheight=36em]res://icon.svg[/img]
 
 
 About me:
-This is test N15
+
 My name is Ks! Well, my internet name is Ks
 
-I'm currently 17, was born and live in Brazil, and am fluent in both Portuguese and English.
+I'm currently 17, was born and live in [url=1b]Brazil[/url], and am fluent in both Portuguese and English.
 
 I always wanted to show people some of my interests and projects and kewl stuff that may come, so I made this website, without knowing a single bit of HTML.
 
-If you like any of the following: M4th, Programming, Colors, Linguistics, Boops;
+If you like any of the following: M4th, Programming, Colors, Linguistics, [url=1a]Boops[/url];
 
 This is a place for you! If you don't, you are still welcome!
 
@@ -39,6 +39,16 @@ Interests: Math, Coding, Rhythm!
 Favourite animal: Dogz
 Current favourite song: [url=https://www.youtube.com/watch?v=GaqDu16Rfe4&list=RDGaqDu16Rfe4]Mirror[/url]
 [/ul][/left]
+
+Contact me:
+[table=7,center,center]
+[cell][url=https://github.com/Ks-Marbs]Github[/url][/cell][cell]          [/cell][cell][url=https://www.youtube.com/@KsMarbles]Youtube[/url][/cell][cell]          [/cell][cell][url=https://discord.com/users/925792681647566898]Discord[/url][/cell][cell]          [/cell][cell][url=mailto:nykolask11@gmail.com]E-mail[/url][/cell]
+[cell][img=top,left,width=64em]res://images/gh.png[/img][/cell][cell]          [/cell][cell][img=top,left,width=64em]res://images/yt.png[/img][/cell][cell]          [/cell][cell][img=top,left,width=64em]res://images/dc.png[/img][/cell][cell]          [/cell][cell][img=top,left,width=64em]res://images/ml.png[/img][/cell]
+[/table]
+
+
+
+
 ",
 "[i]Games[/i]
 
@@ -78,7 +88,7 @@ Demos here: [wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://githu
 [/cell]
 [cell]  [/cell]
 [cell]
-[img=top,left,width=256emxheight=256em]res://images/rs.png[/img]
+[img=top,left,width=256emxheight=256em]res://images/LH.png[/img]
 [/cell]
 [/table]
 

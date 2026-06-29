@@ -55,7 +55,7 @@ func _process(delta: float) -> void:
 
 	else:
 		scale = Vector2.ONE * 4
-		size = Vector2(get_window().size[0]/4-int(str(self.name)[0])*60,60)
+		size = Vector2(get_window().size[0]/4-int(str(self.name)[0])*30-60,60)
 		if Global.woosh:
 			position += (Vector2(0,int(str(self.name)[0]))*240 - position)/15.0
 		else:
