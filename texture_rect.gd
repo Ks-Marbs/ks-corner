@@ -8,9 +8,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	position += Vector2(15,3)/10
-	if position[0] > -100: position -= Vector2(9,0)*1440
-	if position[1] > -100: position -= Vector2(0,9)*1440
+	position += Vector2(8,3)/10
+	if position[0] > -100: position -= Vector2(9,0)*2304
+	if position[1] > -100: position -= Vector2(0,9)*2304
 	match Global.page:
 		0:
 			modulate += (Color(0.97, 0.695, 0.0, 1.0)-modulate)/50

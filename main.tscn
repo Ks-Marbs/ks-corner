@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://clv1aeffgobhx"]
 
+[ext_resource type="Theme" uid="uid://b5dxjrg5nt1f4" path="res://something.tres" id="1_4c57u"]
 [ext_resource type="Texture2D" uid="uid://bnmhfqq4u2p0q" path="res://images/Arow button.png" id="1_ig7tw"]
-[ext_resource type="Theme" uid="uid://b5dxjrg5nt1f4" path="res://images/something.tres" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://bd4h3837krbv7" path="res://bap.gd" id="2_lquwl"]
 [ext_resource type="Script" uid="uid://cs1gkxm2k086t" path="res://bop.gd" id="3_1bvp3"]
 [ext_resource type="AudioStream" uid="uid://clpdyri0hur85" path="res://images/pt2.mp3" id="3_4c57u"]
@@ -10,6 +10,15 @@
 [ext_resource type="Script" uid="uid://hn88cim1pmu2" path="res://text.gd" id="6_7mycd"]
 [ext_resource type="Texture2D" uid="uid://bk1p37dbbiy66" path="res://images/bg.png" id="7_5vw27"]
 [ext_resource type="Script" uid="uid://ca8vl5myse2s7" path="res://texture_rect.gd" id="8_kek77"]
+[ext_resource type="Script" uid="uid://dkv00dbyafj43" path="res://num.gd" id="11_w48qg"]
+[ext_resource type="Script" uid="uid://c73v2fmfj0nvb" path="res://calc.gd" id="12_vivmo"]
+[ext_resource type="Texture2D" uid="uid://cqy1pu8xthbj5" path="res://images/bu.png" id="13_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://i0d208hidkgj" path="res://images/bux.png" id="14_074og"]
+[ext_resource type="Script" uid="uid://djmldqvvl6ciy" path="res://display.gd" id="14_yaehf"]
+[ext_resource type="Script" uid="uid://bjw1snspqlvel" path="res://operate.gd" id="16_2cqfq"]
+[ext_resource type="Script" uid="uid://hdl1kdjxvfep" path="res://equ.gd" id="17_yaehf"]
+[ext_resource type="Texture2D" uid="uid://drcmdfruv6rpw" path="res://images/buc.png" id="18_cegan"]
+[ext_resource type="Script" uid="uid://dtchoqrnlks1" path="res://calc_button.gd" id="19_82xsv"]
 
 [node name="Node2D" type="Node2D" unique_id=1138968870]
 
@@ -18,13 +27,44 @@ z_index = -100
 offset_left = 3.0
 offset_top = 62.0
 offset_right = 1146.0
-offset_bottom = 653.0
+offset_bottom = 2232.0
 mouse_filter = 1
-theme = ExtResource("2_0xm2m")
+theme = ExtResource("1_4c57u")
 theme_override_font_sizes/normal_font_size = 32
 theme_override_font_sizes/bold_font_size = 48
 theme_override_font_sizes/italics_font_size = 64
 bbcode_enabled = true
+text = "[i]Math[/i]
+
+[b]Math is super cool, if you actually see what's happening and not just numbers![/b]
+Math can be divided into 5 main categories (mostly)
+
+[i]1 - Algebra[/i]
+x,y,z,k,n,m,l, just a ton of letters
+it's the main backbone of math when it comes to proofs and writing, but it can be scary as it gets really abstract
+Some main topics you need to understand:
+[left]
+	-Equations
+	-Notable products
+	-Quadratics
+	-Polynomials
+	-Functions
+	-Means
+	-more to be added when we add it
+[/left]
+[i]2 - Combinatorics[/i]
+Used for the number's most important job, Counting
+It is used to count stuff in groups and quickly
+Some main topics you need to understand:
+[left]
+	-And & or rules
+	-Permutations
+	-Choose function
+	-
+	-
+	-
+	-more to be added when we add it
+[/left]"
 horizontal_alignment = 1
 justification_flags = 195
 visible_characters_behavior = 1
@@ -46,6 +86,7 @@ texture = ExtResource("3_kek77")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+theme = ExtResource("1_4c57u")
 
 [node name="0K\'" type="NinePatchRect" parent="." unique_id=1771300790]
 self_modulate = Color(1, 0.7490196, 0.27058825, 1)
@@ -69,7 +110,8 @@ offset_bottom = 14.25
 scale = Vector2(4, 4)
 mouse_filter = 2
 mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 8
 text = "Ks' Corner"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -98,7 +140,8 @@ offset_bottom = 14.25
 scale = Vector2(4, 4)
 mouse_filter = 2
 mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 8
 text = "Games"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -129,7 +172,8 @@ offset_bottom = 14.5
 scale = Vector2(4, 4)
 mouse_filter = 2
 mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 8
 text = "Series"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -158,7 +202,8 @@ offset_bottom = 14.5
 scale = Vector2(4, 4)
 mouse_filter = 2
 mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 8
 text = "Math"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -184,9 +229,9 @@ offset_bottom = 19.25
 scale = Vector2(3, 3)
 mouse_filter = 2
 mouse_default_cursor_shape = 2
-theme = ExtResource("2_0xm2m")
+theme = ExtResource("1_4c57u")
 theme_override_font_sizes/normal_font_size = 8
-text = "Coming soon"
+text = "Calculator"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -201,6 +246,568 @@ texture = ExtResource("7_5vw27")
 stretch_mode = 1
 script = ExtResource("8_kek77")
 
+[node name="Calc" type="ColorRect" parent="." unique_id=1066047869]
+z_index = -4
+offset_left = 389.0
+offset_top = 183.0
+offset_right = 1069.6667
+offset_bottom = 856.0
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+color = Color(0.05490196, 0.05490196, 0.05490196, 0.8509804)
+script = ExtResource("12_vivmo")
+
+[node name="1" type="TextureButton" parent="Calc" unique_id=1663884898]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 151.00055
+offset_right = 65.0
+offset_bottom = 205.00055
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("11_w48qg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/1" unique_id=293987483]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="2" type="TextureButton" parent="Calc" unique_id=708063272]
+layout_mode = 0
+offset_left = 145.00006
+offset_top = 151.00055
+offset_right = 199.00006
+offset_bottom = 205.00055
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("11_w48qg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/2" unique_id=773079013]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="3" type="TextureButton" parent="Calc" unique_id=211987004]
+layout_mode = 0
+offset_left = 279.00006
+offset_top = 151.00055
+offset_right = 333.00006
+offset_bottom = 205.00055
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("11_w48qg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/3" unique_id=1800217345]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="4" type="TextureButton" parent="Calc" unique_id=2088633334]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 285.0003
+offset_right = 65.0
+offset_bottom = 339.0003
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("11_w48qg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/4" unique_id=330818418]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="5" type="TextureButton" parent="Calc" unique_id=1856457858]
+layout_mode = 0
+offset_left = 145.00006
+offset_top = 285.0003
+offset_right = 199.00006
+offset_bottom = 339.0003
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("11_w48qg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/5" unique_id=1638949227]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="6" type="TextureButton" parent="Calc" unique_id=8125746]
+layout_mode = 0
+offset_left = 279.00006
+offset_top = 285.0003
+offset_right = 333.00006
+offset_bottom = 339.0003
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("11_w48qg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/6" unique_id=636703634]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="7" type="TextureButton" parent="Calc" unique_id=1568844882]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 419.0003
+offset_right = 65.0
+offset_bottom = 473.0003
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("11_w48qg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/7" unique_id=1859308325]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="8" type="TextureButton" parent="Calc" unique_id=1701329149]
+layout_mode = 0
+offset_left = 145.00006
+offset_top = 419.0003
+offset_right = 199.00006
+offset_bottom = 473.0003
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("11_w48qg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/8" unique_id=1535361551]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="9" type="TextureButton" parent="Calc" unique_id=1988168258]
+layout_mode = 0
+offset_left = 279.00006
+offset_top = 419.0003
+offset_right = 333.00006
+offset_bottom = 473.0003
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("11_w48qg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/9" unique_id=1196726510]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="0" type="TextureButton" parent="Calc" unique_id=1557881350]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 553.0005
+offset_right = 65.0
+offset_bottom = 607.0005
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("11_w48qg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/0" unique_id=1832939290]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="dot" type="TextureButton" parent="Calc" unique_id=1382730441]
+layout_mode = 0
+offset_left = 145.00006
+offset_top = 553.0005
+offset_right = 199.00006
+offset_bottom = 607.0005
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("16_2cqfq")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/dot" unique_id=711722341]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="=" type="TextureButton" parent="Calc" unique_id=1661422884]
+layout_mode = 0
+offset_left = 279.00006
+offset_top = 553.0005
+offset_right = 333.00006
+offset_bottom = 607.0005
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("17_yaehf")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/=" unique_id=653247897]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="+" type="TextureButton" parent="Calc" unique_id=496650608]
+layout_mode = 0
+offset_left = 413.00006
+offset_top = 151.00055
+offset_right = 467.00006
+offset_bottom = 205.00055
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("16_2cqfq")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/+" unique_id=644828885]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="-" type="TextureButton" parent="Calc" unique_id=24508062]
+layout_mode = 0
+offset_left = 413.00006
+offset_top = 285.0003
+offset_right = 467.00006
+offset_bottom = 339.0003
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("16_2cqfq")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/-" unique_id=773836755]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="*" type="TextureButton" parent="Calc" unique_id=1164244764]
+layout_mode = 0
+offset_left = 413.00006
+offset_top = 419.0003
+offset_right = 467.00006
+offset_bottom = 473.0003
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("16_2cqfq")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/*" unique_id=564150255]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="div" type="TextureButton" parent="Calc" unique_id=2008193970]
+layout_mode = 0
+offset_left = 413.00006
+offset_top = 553.0005
+offset_right = 467.00006
+offset_bottom = 607.0005
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("16_2cqfq")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/div" unique_id=1695248904]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="(" type="TextureButton" parent="Calc" unique_id=903397326]
+layout_mode = 0
+offset_left = 551.6663
+offset_top = 151.00055
+offset_right = 605.6663
+offset_bottom = 205.00055
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("16_2cqfq")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/(" unique_id=950164672]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name=")" type="TextureButton" parent="Calc" unique_id=480902940]
+layout_mode = 0
+offset_left = 551.6663
+offset_top = 285.0003
+offset_right = 605.6663
+offset_bottom = 339.0003
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("16_2cqfq")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/)" unique_id=643756015]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="per" type="TextureButton" parent="Calc" unique_id=729813151]
+layout_mode = 0
+offset_left = 551.6663
+offset_top = 419.0003
+offset_right = 605.6663
+offset_bottom = 473.0003
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("16_2cqfq")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/per" unique_id=1227556414]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="C" type="TextureButton" parent="Calc" unique_id=529556990]
+layout_mode = 0
+offset_left = 551.6663
+offset_top = 553.0005
+offset_right = 605.6663
+offset_bottom = 607.0005
+scale = Vector2(2, 2)
+texture_normal = ExtResource("13_2cqfq")
+texture_pressed = ExtResource("14_074og")
+script = ExtResource("16_2cqfq")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc/C" unique_id=133277537]
+layout_mode = 0
+offset_right = 54.0
+offset_bottom = 54.0
+mouse_filter = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "1"
+autowrap_trim_flags = 0
+tab_size = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="ColorRect" type="ColorRect" parent="Calc" unique_id=1832732166]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 24.0
+offset_right = 660.66675
+offset_bottom = 139.0
+color = Color(0.05490196, 0.05490196, 0.05490196, 0.8509804)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Calc" unique_id=10990802]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 24.00058
+offset_right = 337.33337
+offset_bottom = 80.00058
+scale = Vector2(2, 2)
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 32
+text = "000000"
+scroll_active = false
+scroll_following = true
+script = ExtResource("14_yaehf")
+
+[node name="calc_button" type="TextureButton" parent="." unique_id=1000026016]
+offset_left = 12.0
+offset_top = 584.0
+offset_right = 66.0
+offset_bottom = 638.0
+texture_normal = ExtResource("18_cegan")
+texture_pressed = ExtResource("18_cegan")
+script = ExtResource("19_82xsv")
+
 [connection signal="meta_clicked" from="text" to="text" method="_on_meta_clicked"]
 [connection signal="mouse_entered" from="0K\'" to="0K\'" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="0K\'" to="0K\'" method="_on_mouse_exited"]
@@ -212,3 +819,5 @@ script = ExtResource("8_kek77")
 [connection signal="mouse_exited" from="3Math" to="3Math" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="3Math/0" to="3Math/0" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="3Math/0" to="3Math/0" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Calc" to="Calc" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Calc" to="Calc" method="_on_mouse_exited"]

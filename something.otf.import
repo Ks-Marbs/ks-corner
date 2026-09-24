@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://8nhylr43p5fs"
-path="res://.godot/imported/something.otf-7342fd378cce4896bdf9b3496f369683.fontdata"
+uid="uid://bpokki5b0vt5k"
+path="res://.godot/imported/something.otf-ff282718fa7c6b530ce02fc1e55a49c7.fontdata"
 
 [deps]
 
-source_file="res://images/something.otf"
-dest_files=["res://.godot/imported/something.otf-7342fd378cce4896bdf9b3496f369683.fontdata"]
+source_file="res://something.otf"
+dest_files=["res://.godot/imported/something.otf-ff282718fa7c6b530ce02fc1e55a49c7.fontdata"]
 
 [params]
 
@@ -22,7 +22,7 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 modulate_color_glyphs=false
-hinting=1
+hinting=3
 subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0

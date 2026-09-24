@@ -66,5 +66,7 @@ func _process(delta: float) -> void:
 	else:
 		if Input.is_action_just_pressed("click") and mouse_on:
 			Global.woosh = false
+			Global.bo = true
+			Global.calc = false
 			Global.page = int(str(self.name)[0])
 	pass

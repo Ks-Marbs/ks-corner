@@ -31,6 +31,7 @@ func _process(delta: float) -> void:
 	if mouse_on and Input.is_action_just_pressed("click"):
 		if clicks == 0:
 			Global.page = 0
+			Global.bo = true
 			Global.woosh = false
 			clicks = 0
 		clicks=0

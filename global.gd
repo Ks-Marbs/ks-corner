@@ -1,6 +1,9 @@
 extends Node
 var woosh := false
 var wa:= Vector2.ONE
+var bo = false
+var calc := false
+var calc_m1 := ""
 var text:=[["[i] Hey! [/i] 
 
 [b] Welcome to Ks' Corner[/b] 
@@ -13,7 +16,7 @@ It's mostly a small collection of my projects and some of my interests!
 Don't except anything too serious, all in here is made for fun!
 [wave amp=50.0 freq=4.0 connected=0][color=gold]~(^w^)~[/color][/wave]
 
-Made in Godot [img=width=36emxheight=36em]res://icon.svg[/img]
+Made in Godot [img=36emx36em]res://icon.svg[/img]
 
 
 About me:
@@ -34,7 +37,7 @@ This is a place for you! If you don't, you are still welcome!
 TL;DR:
 [left][ul]Name: Ks
 Age: 17
-Nationality: Brazilian  [img=width=36emxheight=36em]res://images/Brazil.png[/img]
+Nationality: Brazilian  [img=36emx36em]res://images/Brazil.png[/img]
 Interests: Math, Coding, Rhythm!
 Favourite animal: Dogz
 Current favourite song: [url=https://www.youtube.com/watch?v=GaqDu16Rfe4&list=RDGaqDu16Rfe4]Mirror[/url]
@@ -43,7 +46,7 @@ Current favourite song: [url=https://www.youtube.com/watch?v=GaqDu16Rfe4&list=RD
 Contact me:
 [table=7,center,center]
 [cell][url=https://github.com/Ks-Marbs]Github[/url][/cell][cell]          [/cell][cell][url=https://www.youtube.com/@KsMarbles]Youtube[/url][/cell][cell]          [/cell][cell][url=https://discord.com/users/925792681647566898]Discord[/url][/cell][cell]          [/cell][cell][url=mailto:nykolask11@gmail.com]E-mail[/url][/cell]
-[cell][img=top,left,width=64em]res://images/gh.png[/img][/cell][cell]          [/cell][cell][img=top,left,width=64em]res://images/yt.png[/img][/cell][cell]          [/cell][cell][img=top,left,width=64em]res://images/dc.png[/img][/cell][cell]          [/cell][cell][img=top,left,width=64em]res://images/ml.png[/img][/cell]
+[cell][img=64em]res://images/gh.png[/img][/cell][cell]          [/cell][cell][img=64em]res://images/yt.png[/img][/cell][cell]          [/cell][cell][img=64em]res://images/dc.png[/img][/cell][cell]          [/cell][cell][img=64em]res://images/ml.png[/img][/cell]
 [/table]
 
 
@@ -65,10 +68,10 @@ Play here: [wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://ks-mar
 [/cell]
 [cell]  [/cell]
 [cell]
-[img=top,left,width=256emxheight=256em]res://images/rs.png[/img]
+[img=256emx256em]res://images/rs.png[/img]
 [/cell]
 [cell]
-[img=top,left,width=256emxheight=256em]res://images/URG.png[/img]
+[img=256emx256em]res://images/URG.png[/img]
 [/cell]
 [cell]  [/cell]
 [cell]
@@ -88,7 +91,7 @@ Demos here: [wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://githu
 [/cell]
 [cell]  [/cell]
 [cell]
-[img=top,left,width=256emxheight=256em]res://images/LH.png[/img]
+[img=256emx256em]res://images/LH.png[/img]
 [/cell]
 [/table]
 
@@ -111,7 +114,7 @@ S2:[wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://youtube.com/pl
 [/cell]
 
 [cell]
-[img=top,left,width=360emxheight=204em]res://images/AMR1.jpg[/img]  [img=top,left,width=360emxheight=204em]res://images/AMR2.jpg[/img]
+[img=360emx204em]res://images/AMR1.jpg[/img]  [img=360emx204em]res://images/AMR2.jpg[/img]
 [/cell]
 [cell]  [/cell]
 [cell]  [/cell]
@@ -124,7 +127,7 @@ Watch here:[wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://youtub
 [/cell]
 
 [cell]
-[img=top,left,width=360emxheight=204em]res://images/LMR.jpg[/img]
+[img=360emx204em]res://images/LMR.jpg[/img]
 [/cell]
 [cell]  [/cell]
 [cell]  [/cell]
@@ -135,15 +138,76 @@ Its way too old T-T
 Watch? here:[wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://youtube.com/playlist?list=PLaefg6KsKPQEZb6F5BPx3JUm7hd2vqbRj&si=P4TwMIcXRnNb7afV]Click me![/url][/color][/wave]
 [/cell]
 [cell]
-[img=top,left,width=360emxheight=204em]res://images/A.jpg[/img]
+[img=360emx204em]res://images/A.jpg[/img]
 [/cell]
 [cell]  [/cell]
 [cell]  [/cell]
 
 [/table]
 ",
-"Math
-coming soon"]
+"[i]Math[/i]
+
+[b]Math is super cool, if you actually see what's happening and not just numbers![/b]
+Math can be divided into 5 main categories (mostly)
+
+[i]1 - Algebra[/i]
+x,y,z,k,n,m,l, just a ton of letters
+it's the main backbone of math when it comes to proofs and writing, but it can be scary as it gets really abstract[left]		Main topics:
+	-Equations
+	-Notable products
+	-Quadratics
+	-Polynomials
+	-Functions
+	-Means
+	-more to be added when we add it
+[/left]
+[i]2 - Combinatorics[/i]
+Used for the number\'s most important job, Counting
+It is used to count stuff in groups and quickly[left]		Main topics:
+	-And & or rules
+	-Permutations
+	-Choose function
+	-Recursive methods
+	-Graph Theory
+	-Game Theory
+	-more to be added when we add it
+[/left]
+[i]3 - Geometry[/i]
+Super important for artists and CS people, uses a ton of infinites, and some consider it the base of math.[left]		Main topics:
+	-Points, Lines and Planes
+	-Angles
+	-Axioms
+	-Circles
+	-Triangles
+	-Trigonometry
+	-more to be added when we add it
+[/left]
+[i]4 - Number Theory[/i]
+Fractions dont exist here :0 Focuses on Naturals but sometimes there's Integers[left]		Main topics:
+	-Divisibility
+	-Primes and Composites
+	-G.C.D. and M.C.M.
+	-Modular Arithmetic
+	-Chinese Remainder theorem
+	-Euler's totient function
+	-more to be added when we add it
+[/left]
+[i]5 - Logic[/i]
+What do you mean math without numbers? We're doing math with statements now?[left]		Main topics:
+	-Propositions
+	-Not, And, Or, Xor
+	-If, Iff
+	-Boolean Algebra
+	-Deductions
+	-Proofs
+	-more to be added when we add it
+[/left]
+
+
+
+"
+
+]
 ]
 var page := 0
 var lang := 0

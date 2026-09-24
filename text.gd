@@ -1,6 +1,7 @@
 extends RichTextLabel
 var speed := 1
 var k:= 0.0
+var bo = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -8,6 +9,10 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+
+	if Global.bo:
+		if get_v_scroll_bar().value > 4: get_v_scroll_bar().value -= get_v_scroll_bar().value/4
+		else: get_v_scroll_bar().value = 0; Global.bo = false
 	if k > -0.2:
 		$"1boop".modulate = Color(1,1,1,k)
 		k += (-0.2-k)/10

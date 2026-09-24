@@ -18,4 +18,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	$t.scale = Vector2(Global.wa[0] * 3,Global.wa[0] * 3)
 	$t.position = Vector2(-4.0/Global.wa[0],0)
+	if Input.is_action_just_pressed("click") and mouse_on:
+		Global.woosh = false
+		Global.bo = true
 	pass
