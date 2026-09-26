@@ -15,6 +15,8 @@ func bop():
 	return false
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if (OS.has_feature("web_android") or OS.has_feature("web_ios")):
+		scale = Vector2.ONE* 2
 	visible = Global.calc
 	if bop() and Input.is_action_just_pressed("click"):
 		a = position - get_global_mouse_position()
