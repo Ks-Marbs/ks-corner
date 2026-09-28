@@ -35,12 +35,14 @@ func _process(delta: float) -> void:
 			j.size = (size-Vector2(28,0))*Vector2(1.0,Global.wa[0])
 		match str(self.name)[0]:
 			"1":
+				Global.am1 = get_child_count()-1
 				if Global.woosh:
 						position += (Vector2(320,0)*Global.wa - Vector2(28,0)- position)/15.0
 				else:
 					if position > Vector2(-400,0):
 						position += (Vector2(-400,0) - position)/15.0
 			"2":
+				Global.am2 = get_child_count()-1
 				if Global.woosh:
 					position += (Vector2(610,0)*Global.wa - Vector2(56,0)- position)/15.0
 				else:
@@ -65,8 +67,11 @@ func _process(delta: float) -> void:
 	if !Global.woosh: on = false
 	else:
 		if Input.is_action_just_pressed("click") and mouse_on:
+			var a = true
 			Global.woosh = false
 			Global.bo = true
 			Global.calc = false
-			Global.page = int(str(self.name)[0])
+			for i in range(1,get_child_count()):
+				if get_child(i).mouse_on: a = false
+			if a:Global.page = int(str(self.name)[0])
 	pass

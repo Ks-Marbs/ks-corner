@@ -145,6 +145,87 @@ text = "Games"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="0" type="ColorRect" parent="1Games" unique_id=1791251690]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+script = ExtResource("5_272bh")
+
+[node name="t" type="RichTextLabel" parent="1Games/0" unique_id=119972886]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_top = 0.25
+offset_right = 90.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 8
+text = "Room Sokoban"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="ColorRect" parent="1Games" unique_id=2097753298]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+script = ExtResource("5_272bh")
+
+[node name="t" type="RichTextLabel" parent="1Games/1" unique_id=1151171480]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_top = 0.25
+offset_right = 90.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 8
+text = "Unn. Rhythm Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="ColorRect" parent="1Games" unique_id=2107892303]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+script = ExtResource("5_272bh")
+
+[node name="t" type="RichTextLabel" parent="1Games/2" unique_id=510979745]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_top = 0.25
+offset_right = 90.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 8
+text = "Lavender's Home"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="2Series" type="NinePatchRect" parent="." unique_id=1899935413]
 self_modulate = Color(1, 0, 0.5333333, 1)
 z_index = -5
@@ -230,7 +311,34 @@ mouse_filter = 2
 mouse_default_cursor_shape = 2
 theme = ExtResource("1_4c57u")
 theme_override_font_sizes/normal_font_size = 8
-text = "Calculator"
+text = "Algebra"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="ColorRect" parent="3Math" unique_id=298119174]
+self_modulate = Color(1, 1, 1, 0)
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+script = ExtResource("5_272bh")
+
+[node name="t" type="RichTextLabel" parent="3Math/1" unique_id=411932635]
+z_index = -20
+z_as_relative = false
+layout_mode = 0
+offset_top = 0.25
+offset_right = 90.0
+offset_bottom = 19.25
+scale = Vector2(3, 3)
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("1_4c57u")
+theme_override_font_sizes/normal_font_size = 8
+text = "Combinatorics"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -812,11 +920,19 @@ script = ExtResource("19_82xsv")
 [connection signal="mouse_exited" from="0K\'" to="0K\'" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="1Games" to="1Games" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="1Games" to="1Games" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="1Games/0" to="1Games/0" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="1Games/0" to="1Games/0" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="1Games/1" to="1Games/1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="1Games/1" to="1Games/1" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="1Games/2" to="1Games/2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="1Games/2" to="1Games/2" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="2Series" to="2Series" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="2Series" to="2Series" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="3Math" to="3Math" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="3Math" to="3Math" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="3Math/0" to="3Math/0" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="3Math/0" to="3Math/0" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="3Math/1" to="3Math/1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="3Math/1" to="3Math/1" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="Calc" to="Calc" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Calc" to="Calc" method="_on_mouse_exited"]

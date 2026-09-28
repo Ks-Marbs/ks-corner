@@ -30,12 +30,14 @@ func _process(delta: float) -> void:
 
 func _on_meta_clicked(meta: Variant) -> void:
 	if str(meta)[0] == "1":
-		match str(meta):
-			"1a":
+		match str(meta)[1]:
+			"a":
 				$"1boop".position = get_local_mouse_position()-Vector2(120,120)
 				k = 0.8
-			"1b":
+			"b":
 				$audio.stream = load("res://images/pt"+str(randi_range(1,4))+".mp3")
 				$audio.play()
+			"c":
+				Global.page = int(str(meta)[2]+str(meta)[3])
 	else :OS.shell_open(str(meta))
 	pass # Replace with function body.

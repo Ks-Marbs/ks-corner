@@ -1,4 +1,6 @@
 extends Node
+var am1 := 0
+var am2 := 0
 var woosh := false
 var wa:= Vector2.ONE
 var bo = false
@@ -60,7 +62,7 @@ Contact me:
 
 [table=3,center,center]
 [cell]
-[b]Room Sokoban[/b]
+[b][url=1c04]Room Sokoban[/url][/b]
 This was my first Godot game!
 It's a simple Sokoban game
 with some extra mechanics.
@@ -75,7 +77,7 @@ Play here: [wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://ks-mar
 [/cell]
 [cell]  [/cell]
 [cell]
-[b]Unnamed Rhythm Game[/b]
+[b][url=1c05]Unnamed Rhythm Game[/url][/b]
 Not so simple Rhythm game, 
 also made in Godot!
 Currently in progress
@@ -83,7 +85,7 @@ Demos here: [wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://githu
 [/cell]
 [table=3,center,center]
 [cell]
-[b]Lavender\'s Home[/b]
+[b][url=1c06]Lavender\'s Home[/url][/b]
 Collab with Seni foxy!
 It comes with lore, ooooh~
 Updates whenever people unlock updates
@@ -205,8 +207,50 @@ What do you mean math without numbers? We're doing math with statements now?[lef
 
 
 
-"
+",
+"[i]Room Sokoban[/i]
 
+[b]This was my first game ever![/b]
+
+Well, about developing this game, the idea was for it to be a test for [url=1c06]Lavender's Home[/url], I wanted it to have a fully working sokoban-style movement, the images were edited from Lav's home by me.
+
+Comparison:
+[img]res://images/player.png[/img]     [img]res://images/lav1.1.1.png[/img]
+
+Apart from that, I think my inspirations we're games like Baba is you,  mostly for the little animations and the pixel art style, the puzzles themselves we're fully created by me, although no one has given feedback about them, out of 20-ish playtesters, so I guess they went well?
+
+Mini wiki:
+
+The game has you, a box pusher, needing to put boxes in their right places, marked by a yellow square. Boxes can only be pushed and objects or walls will keep you from pushing it.
+
+Box: Push them to their place! Boxes are not multi-pushable, as your character can only push one at a time.[img=32em]res://images/box.2.png[/img]
+
+Weight: Acts just like a Box, but has no place to go :[, use them as needed. [img=32em]res://images/weight.1.png[/img]
+
+Ice: Causes you to slide, unless blocked by a wall, object, box or weight. Boxes and Weights are too heavy to slide, so use that for your adventage. [img=32em]res://images/ice.png[/img]
+
+Shifter: Pushes whatever is above it, unless blocked by a wall, object, Box or Weight. You cannot leave them unless they're blocked. [img=32em]res://images/shift1.png[/img]
+
+Gate: Gets open if you put a Box or Weight on top of the button. 
+[img=32em]res://images/prb1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prw1.png[/img]
+
+
+Can someone teach me how to make an article T-T
+
+
+
+
+
+",
+"[i]Unnamed Rhythm Game[/i]
+
+[b]RHYTHM GAME! RHYTHM GAME! RHYTHM GAME![/b]
+
+
+
+
+
+","6","7","8","9","10"
 ]
 ]
 var page := 0
