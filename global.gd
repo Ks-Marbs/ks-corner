@@ -235,6 +235,8 @@ Gate: Gets open if you put a Box or Weight on top of the button.
 [img=32em]res://images/prb1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prw1.png[/img]
 
 
+[wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://ks-marbs.github.io/room_sokoban/]PLAY HERE![/url][/color][/wave]
+
 Can someone teach me how to make an article T-T
 
 
