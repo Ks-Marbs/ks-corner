@@ -19,6 +19,17 @@
 [ext_resource type="Script" uid="uid://hdl1kdjxvfep" path="res://equ.gd" id="17_yaehf"]
 [ext_resource type="Texture2D" uid="uid://drcmdfruv6rpw" path="res://images/buc.png" id="18_cegan"]
 [ext_resource type="Script" uid="uid://dtchoqrnlks1" path="res://calc_button.gd" id="19_82xsv"]
+[ext_resource type="PackedScene" uid="uid://daex642g6vw68" path="res://lav.tscn" id="20_82xsv"]
+[ext_resource type="Script" uid="uid://dwqfnhjw3l75g" path="res://fl.gd" id="21_getpj"]
+[ext_resource type="Script" uid="uid://mi1cpmfmr5nf" path="res://static_body_2d_3.gd" id="22_ryguw"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_hrcvg"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ryguw"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_getpj"]
+friction = 0.0
+bounce = 1.0
 
 [node name="Node2D" type="Node2D" unique_id=1138968870]
 
@@ -914,6 +925,39 @@ offset_bottom = 638.0
 texture_normal = ExtResource("18_cegan")
 texture_pressed = ExtResource("18_cegan")
 script = ExtResource("19_82xsv")
+
+[node name="Lav" parent="." unique_id=753975263 instance=ExtResource("20_82xsv")]
+process_mode = 3
+visible = false
+position = Vector2(124, 110)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=180550671]
+position = Vector2(606, 627)
+script = ExtResource("21_getpj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2100145158]
+shape = SubResource("WorldBoundaryShape2D_hrcvg")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=429090855]
+material = SubResource("CanvasItemMaterial_ryguw")
+position = Vector2(-2, 470)
+rotation = 1.5707964
+physics_material_override = SubResource("PhysicsMaterial_getpj")
+constant_linear_velocity = Vector2(100, 10)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=305910812]
+shape = SubResource("WorldBoundaryShape2D_hrcvg")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=1931271507]
+material = SubResource("CanvasItemMaterial_ryguw")
+position = Vector2(-2, 470)
+rotation = -1.5707964
+physics_material_override = SubResource("PhysicsMaterial_getpj")
+constant_linear_velocity = Vector2(100, 10)
+script = ExtResource("22_ryguw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" unique_id=1065723520]
+shape = SubResource("WorldBoundaryShape2D_hrcvg")
 
 [connection signal="meta_clicked" from="text" to="text" method="_on_meta_clicked"]
 [connection signal="mouse_entered" from="0K\'" to="0K\'" method="_on_mouse_entered"]

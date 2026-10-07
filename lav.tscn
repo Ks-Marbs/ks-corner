@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://daex642g6vw68"]
+
+[ext_resource type="Texture2D" uid="uid://dv32ah311jo5k" path="res://images/lav1.1.1.png" id="1_igfjt"]
+[ext_resource type="Script" uid="uid://qpxg84yd8umq" path="res://character_body_2d.gd" id="2_jrbs5"]
+[ext_resource type="Texture2D" uid="uid://da7k5bihcmyix" path="res://images/boop.png" id="3_jrbs5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hrcvg"]
+size = Vector2(36, 36)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=365917167]
+scale = Vector2(2, 2)
+script = ExtResource("2_jrbs5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1064959290]
+shape = SubResource("RectangleShape2D_hrcvg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1346916120]
+texture = ExtResource("1_igfjt")
+region_enabled = true
+region_rect = Rect2(0, 0, 36, 36)
+
+[node name="boop" type="Sprite2D" parent="." unique_id=1701752893]
+visible = false
+position = Vector2(1, -32.5)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("3_jrbs5")

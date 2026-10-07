@@ -1,5 +1,6 @@
 extends Node
 var am1 := 0
+var lav := false
 var am2 := 0
 var woosh := false
 var wa:= Vector2.ONE
@@ -218,22 +219,22 @@ Comparison:
 [img]res://images/player.png[/img]     [img]res://images/lav1.1.1.png[/img]
 
 Apart from that, I think my inspirations we're games like Baba is you,  mostly for the little animations and the pixel art style, the puzzles themselves we're fully created by me, although no one has given feedback about them, out of 20-ish playtesters, so I guess they went well?
+[left]
+		Mini wiki:
 
-Mini wiki:
+	The game has you, a box pusher, needing to put boxes in their right places, marked by a yellow square. Boxes can only be pushed and objects or walls will keep you from pushing it.
 
-The game has you, a box pusher, needing to put boxes in their right places, marked by a yellow square. Boxes can only be pushed and objects or walls will keep you from pushing it.
+	Box: Push them to their place! Boxes are not multi-pushable, as your character can only push one at a time.[img=32em]res://images/box.2.png[/img]
 
-Box: Push them to their place! Boxes are not multi-pushable, as your character can only push one at a time.[img=32em]res://images/box.2.png[/img]
+	Weight: Acts just like a Box, but has no place to go :[, use them as needed. [img=32em]res://images/weight.1.png[/img]
 
-Weight: Acts just like a Box, but has no place to go :[, use them as needed. [img=32em]res://images/weight.1.png[/img]
+	Ice: Causes you to slide, unless blocked by a wall, object, box or weight. Boxes and Weights are too heavy to slide, so use that for your adventage. [img=32em]res://images/ice.png[/img]
 
-Ice: Causes you to slide, unless blocked by a wall, object, box or weight. Boxes and Weights are too heavy to slide, so use that for your adventage. [img=32em]res://images/ice.png[/img]
+	Shifter: Pushes whatever is above it, unless blocked by a wall, object, Box or Weight. You cannot leave them unless they're blocked. [img=32em]res://images/shift1.png[/img]
 
-Shifter: Pushes whatever is above it, unless blocked by a wall, object, Box or Weight. You cannot leave them unless they're blocked. [img=32em]res://images/shift1.png[/img]
-
-Gate: Gets open if you put a Box or Weight on top of the button. 
-[img=32em]res://images/prb1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prw1.png[/img]
-
+	Gate: Gets open if you put a Box or Weight on top of the button. 
+		[img=32em]res://images/prb1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prl1.png[/img][img=32em]res://images/prw1.png[/img]
+[/left]
 
 [wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://ks-marbs.github.io/room_sokoban/]PLAY HERE![/url][/color][/wave]
 
@@ -248,11 +249,42 @@ Can someone teach me how to make an article T-T
 
 [b]RHYTHM GAME! RHYTHM GAME! RHYTHM GAME![/b]
 
+[img=512em]res://images/rhyt.png[/img]
+
+Made this purely for my love for rhythm games, and rhythm game artists! Some inspirations include ADOFAI[img=32em]res://images/adofai.png[/img], Rhythm Doctor[img=32em]res://images/RD.png[/img], BeatBlock[img=32em]res://images/bb.png[/img], unbeatable[img=32em]res://images/unb.jpg[/img], AfterBeat[img=32em]res://images/PA.png[/img].
+[left]
+		Most of the game can be reduced to:
+	This is a 4-key rhythm game, made by someone who can barely do 2-keys, so all patterns you see here are very simple.
+	Unless you account for the shaders, screen movement, blinking and zooming, It's a breeze of a game.
+
+		Levels:
+	-[img=64em]res://images/Welcome.jpg[/img] Welcome by Ks]
+	
+	-[img=64em]res://images/Prophecy.jpg[/img] Prophecy by [url=http://faq.creo-music.com]Creo[/url] 
+	
+	-[img=64em]res://images/drnfctn.jpg[/img] drnfctn by [url=https://www.frums.xyz]Frums[/url] 
+	
+	-[img=64em]res://images/Headspace.jpg[/img] Headspace by [url=https://ashastral.com]Ash Astral[/url] 
+	
+	-[img=64em]res://images/ques.jpg[/img] ? and [img=64em]res://images/eps.jpg[/img] ε by [url=https://artifyber.xyz]Artifyber[/url] 
+	
+	-[img=64em]res://images/frac.jpg[/img] FRACTURED//ANOMALY by [url=https://fireentity.space]Fireentity[/url]
+[/left]
+
+
+
+[wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://github.com/Ks-Marbs/rhythm-game]PLAY HERE![/url][/color][/wave]
 
 
 
 
-","6","7","8","9","10"
+
+
+
+",
+"[i]Lavender's Home[/i]
+
+[b]Fun fact: [url=1d]Lavender[/url] exists[/b]","7","8","9","10"
 ]
 ]
 var page := 0

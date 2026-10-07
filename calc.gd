@@ -2,6 +2,7 @@ extends ColorRect
 var on := false
 var mouse_on := false
 var a := Vector2(0,0)
+var d = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -20,6 +21,9 @@ func _process(delta: float) -> void:
 	visible = Global.calc
 	if bop() and Input.is_action_just_pressed("click"):
 		a = position - get_global_mouse_position()
-	if bop() and Input.is_action_pressed("click"):
+		d = true
+	if d and Input.is_action_pressed("click"):
 		position = get_global_mouse_position() + a
+	if not Input.is_action_pressed("click"):
+		d = false
 	pass

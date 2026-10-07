@@ -39,5 +39,7 @@ func _on_meta_clicked(meta: Variant) -> void:
 				$audio.play()
 			"c":
 				Global.page = int(str(meta)[2]+str(meta)[3])
+			"d":
+				Global.lav = true
 	else :OS.shell_open(str(meta))
 	pass # Replace with function body.
