@@ -35,4 +35,6 @@ func _process(delta: float) -> void:
 					Global.woosh = false
 					Global.bo = true
 					Global.page = int(str(self.name)[0])+4+Global.am1+Global.am2
+	else: queue_free()
+		
 	pass
