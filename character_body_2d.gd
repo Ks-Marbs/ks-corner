@@ -66,6 +66,8 @@ func _physics_process(delta: float) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if (OS.has_feature("web_android") or OS.has_feature("web_ios")):
+		scale = Vector2.ONE * 3
 	pass # Replace with function body.
 	
 func bop():
