@@ -282,9 +282,38 @@ Made this purely for my love for rhythm games, and rhythm game artists! Some ins
 
 
 ",
-"[i]Lavender's Home[/i]
+"[i]Lavender'[wave amp=10.0 freq=0.2 connected=0]s[/wave] Home[/i]
 
-[b]Fun fact: [url=1d]Lavender[/url] exists[/b]","7","8","9","10"
+[b]Fun f[wave amp=10.0 freq=0.2 connected=0]a[/wave]ct: [url=1d]Lavender[/url] exists[/b]
+
+This game is being done with [url=https://www.youtube.com/@senifoxy]Seni [wave amp=10.0 freq=0.2 connected=0]F[/wave]oxy[/url] [img=64em]res://images/sen.png[/img]
+
+You follow Lavend[wave amp=10.0 freq=0.2 connected=0]e[/wave]r, knife collector and daughter of a famous singer through their life, until [Game part not unlocked yet]
+[left]
+		Characters:
+[table=2,center,left]
+	[cell][img=128em]res://images/lavicon15.png[/img] - [/cell][cell] [wave amp=10.0 freq=0.2 connected=0]L[/wave]avender:
+Protagonist, shy but social, will stab you if n[wave amp=10.0 freq=0.2 connected=0]e[/wave]eded [/cell]
+	[cell][img=128em]res://images/petalicon0.png[/img] - [/cell][cell] Petal:
+Pretty, Perfec[wave amp=10.0 freq=0.2 connected=0]t[/wave]ionist, Parental, Polished [/cell]
+	[cell][img=128em]res://images/wbicon5.png[/img] - [/cell][cell] Win[wave amp=10.0 freq=0.2 connected=0]t[/wave]erblush:
+Sings ever better, says rules are ov[wave amp=10.0 freq=0.2 connected=0]e[/wave]rrated, and will punch you at will [/cell]
+	[cell][img=128em]res://images/soapicon4.png[/img] - [/cell][cell] Soap:
+Soft, composed, and mostly helpful, only male in house [wave amp=10.0 freq=0.2 connected=0]r[/wave]ight now [/cell][/table]
+
+
+[/left]
+
+
+
+
+[wave amp=20.0 freq=4.0 connected=0][color=0055AA][url=https://github.com/Ks-Marbs/lavender-s-home]SOLVE HERE![/url][/color][/wave]
+
+
+
+"
+
+,"7","8","9","10"
 ]
 ]
 var page := 0

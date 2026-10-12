@@ -4,6 +4,7 @@ var t1 = 0.0
 var t2 = 1.0
 var d = false
 var o = 0.0
+var w:= false
 var p = -1
 var cl := 0.0
 var l := 0
@@ -34,7 +35,9 @@ func _physics_process(delta: float) -> void:
 		velocity.x = p*100
 		t2 = (((p+1)/2)+2.5)*2
 	elif not is_on_floor():
+		w = true
 		t2=10+sign(velocity.x)
+		t1 += delta*3
 	else:
 		t2 = 2
 
@@ -42,7 +45,7 @@ func _physics_process(delta: float) -> void:
 	if bop() and is_on_floor():
 		v=0
 		if Input.is_action_just_pressed("click"):
-			if not (OS.has_feature("web_android") or OS.has_feature("web_ios")):
+			if (OS.has_feature("web_android") or OS.has_feature("web_ios")):
 				cl+=6
 			a = position - get_global_mouse_position()
 			d = true
