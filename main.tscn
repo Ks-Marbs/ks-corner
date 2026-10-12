@@ -299,60 +299,6 @@ text = "Math"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="0" type="ColorRect" parent="3Math" unique_id=395442840]
-self_modulate = Color(1, 1, 1, 0)
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-mouse_filter = 1
-mouse_default_cursor_shape = 2
-script = ExtResource("5_272bh")
-
-[node name="t" type="RichTextLabel" parent="3Math/0" unique_id=1685364838]
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_top = 0.25
-offset_right = 90.0
-offset_bottom = 19.25
-scale = Vector2(3, 3)
-mouse_filter = 2
-mouse_default_cursor_shape = 2
-theme = ExtResource("1_4c57u")
-theme_override_font_sizes/normal_font_size = 8
-text = "Algebra"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="1" type="ColorRect" parent="3Math" unique_id=298119174]
-self_modulate = Color(1, 1, 1, 0)
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-mouse_filter = 1
-mouse_default_cursor_shape = 2
-script = ExtResource("5_272bh")
-
-[node name="t" type="RichTextLabel" parent="3Math/1" unique_id=411932635]
-z_index = -20
-z_as_relative = false
-layout_mode = 0
-offset_top = 0.25
-offset_right = 90.0
-offset_bottom = 19.25
-scale = Vector2(3, 3)
-mouse_filter = 2
-mouse_default_cursor_shape = 2
-theme = ExtResource("1_4c57u")
-theme_override_font_sizes/normal_font_size = 8
-text = "Combinatorics"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="TextureRect" type="TextureRect" parent="." unique_id=69623348]
 z_index = -260
 offset_left = -334.0
@@ -974,9 +920,5 @@ shape = SubResource("WorldBoundaryShape2D_hrcvg")
 [connection signal="mouse_exited" from="2Series" to="2Series" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="3Math" to="3Math" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="3Math" to="3Math" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="3Math/0" to="3Math/0" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="3Math/0" to="3Math/0" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="3Math/1" to="3Math/1" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="3Math/1" to="3Math/1" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="Calc" to="Calc" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Calc" to="Calc" method="_on_mouse_exited"]

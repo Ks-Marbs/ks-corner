@@ -1,6 +1,6 @@
 extends Node
 var am1 := 0
-var lav := true
+var lav := false
 var am2 := 0
 var woosh := false
 var wa:= Vector2.ONE
